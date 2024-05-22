@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('./picture/background/background5.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+    width: 100%;
+}
+
+.message {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.message h1 {
+    font-size: 5em; /* Increase font size for the "Thank You" message */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.message p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.contact-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.contact-item span {
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .message h1 {
+        font-size: 3em; /* Adjust font size for smaller screens */
+    }
+
+    .message p {
+        font-size: 1.2em;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        margin: 10px 0;
+    }
+}
+
+.top {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1rem;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.top img {
+    width: 30px;
+    height: 30px;
+}
+
+.top:hover {
+    background-color: #000000;
+}

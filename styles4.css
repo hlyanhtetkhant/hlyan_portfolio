@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('./picture/background/background4.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 1000px;
+    width: 90%;
+    text-align: left; /* Ensure text alignment is left by default */
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.font_deco {
+    font-family: "Allura", cursive;
+    font-weight: 5;
+    font-style: normal;
+    font-size: 90px;
+    margin-bottom: -30px;
+  }
+  
+
+h1 {
+    font-size: 3.0em;
+    margin-bottom: 10px;
+    text-align: left; /* Align text to the left */
+}
+
+
+.underline {
+    width: 300px;
+    height: 5px;
+    background-color: #fff;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.images {
+    margin-bottom: 20px;
+}
+
+.images img {
+    width: 100%; /* Ensure images take up the full width of their container */
+    max-width: 400px;
+    max-height: 200px; /* Set a maximum height for the images */
+    object-fit: cover; /* Maintain aspect ratio and cover the space */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between the images */
+}
+
+.text {
+    text-align: left; /* Align text to the left */
+    margin-right: 0; /* Remove auto margin to avoid pushing text */
+    max-width: 400px;
+    margin-left: auto; /* Push text block to the right */
+}
+
+.container button {
+    background-color: #fff;
+    color: #4b3621;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.container button:hover {
+    background-color: #ddd;
+}
+
+@media (min-width: 768px) {
+    .content {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .images {
+        flex-direction: column;
+        margin-left: 60px; /* Space between images and text */
+    }
+    .text {
+        text-align: left; /* Ensure text remains aligned to the left */
+    }
+}
