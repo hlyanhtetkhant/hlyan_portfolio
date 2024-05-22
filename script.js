@@ -11,6 +11,6 @@ function seeMore4() {
     window.location.href = 'html5.html';
 }
 function seeMore5() {
-    window.location.href = 'html1.html';
+    window.location.href = 'index.html';
 }
 
